@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  width: 1920px;
+  min-height: 1080px;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 107px;
+  background-color: #3d95e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 0 80px 0 40px;
+}
+
+header h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+header h1 span {
+  font-weight: 400;
+}
+
+header .schedule__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+header .date__container {
+  width: 216px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+header .date__container p {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+header .schedule__container h3 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+/* Stats Container */
+
+.stats__container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 45px 50px;
+  gap: 20px;
+}
+
+.stats__container img {
+  width: 120px;
+  height: 120px;
+}
+
+.stats__container .stats__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats__container .stats__content h1 {
+  width: 370px;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 61px;
+  margin-bottom: 0;
+}
+
+.stats__container .stats__content h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 39px;
+}
+
+.stats__container .stats__schedule {
+  width: 209px;
+  background: #3d95e5;
+  border: 1px solid #397c40;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.stats__container .stats__balls {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-left: 30px;
+}
+
+.stats__container .stats__balls img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Results Section */
+
+section {
+  display: flex;
+  gap: 25px;
+  padding: 15px 25px;
+}
+
+section .results__container {
+  flex: 0.5;
+}
+
+.results__container .result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.result .result__schedule {
+  flex: 0.1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  border-top: 0.2px solid #00738e;
+}
+
+.result:nth-child(odd) .result__schedule {
+  background-color: #ececec;
+}
+
+.result:last-child .result__schedule {
+  border-bottom: 0.2px solid #00738e;
+}
+
+.result .result__schedule h1 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.result .result__schedule h2 {
+  color: #062cb2;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+/* ================ */
+
+.result .result__content__main {
+  flex: 0.9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-top: 0.2px solid #00738e;
+}
+
+.result:nth-child(odd) .result__content__main {
+  background-color: #ececec;
+}
+
+.result:last-child .result__content__main {
+  border-bottom: 0.2px solid #00738e;
+}
+
+.result__content__main .result__content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 0.5;
+  gap: 30px;
+}
+
+.result__content__main .result__content h1 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.result__content__main .result__content img {
+  width: 35px;
+  height: 35px;
+}
+
+.result__content__main .score__container {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.result__content__main .score__container .score {
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  background-color: #c8e5ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result__content__main .score__container .score:last-child {
+  background-color: #3d95e5;
+  color: #ffffff;
+}
+
+.result__content__main .score__container .no__bg {
+  background-color: #c8e5ff !important;
+  color: black !important;
+}
+
+.result__content__main .score__container .score h1 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
