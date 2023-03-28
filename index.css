@@ -114,6 +114,22 @@ header .schedule__container h3 {
 .stats__container .stats__balls img {
   width: 70px;
   height: 70px;
+  margin-bottom: -65px;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+/* Balls Bounce Effect */
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-4px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
 }
 
 /* Results Section */
@@ -188,7 +204,24 @@ section .results__container {
   justify-content: flex-start;
   align-items: center;
   flex: 0.5;
-  gap: 30px;
+}
+
+.result__content__main .result__content img {
+  animation: bounceFlags 1s ease infinite;
+  margin-left: 18px;
+  margin-bottom: -34px;
+}
+
+@keyframes bounceFlags {
+  0% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
+  50% {
+    transform: translate(-50%, -50%) translateY(-2px);
+  }
+  100% {
+    transform: translate(-50%, -50%) translateY(0);
+  }
 }
 
 .result__content__main .result__content h1 {
